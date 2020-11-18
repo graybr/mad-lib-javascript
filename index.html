@@ -10,8 +10,18 @@
         var animal = prompt("Escreva o nome de um animal");
         var place = prompt("Escreva o nome de um lugar");
         var food = prompt("Escreva o nome de uma comida");
-        document.write("Aqui está uma história para você!<br>");  
-        document.write("O desastrado " + animal + " caminhou orgulhosamente pelo " + place + ", derrubando " + food + " por todo lugar.");  
+        var letra = animal.substr(-1,1)
+        const str = "azlebre"
+        const str1 = "águiaandorinhaaranhaararabaleiabarataborboletacapivaracobrafocaformigagaivotagirafajiboialulamelgamoscaonçapulgasardinhaserpentetartarugazebra"
+        if(str.includes(letra) || str1.includes(animal)){
+            document.write("Aqui está uma história para você!<br>");
+            document.write("A desastrada " + animal + " caminhou orgulhosamente pelo(a) " + place + ", derrubando " + food + " por todo lugar.<br>");
+            document.write("Durante muitos anos, o(a) " + place + " era dominado(a) unicamente por uma " + animal + " terrível. Tudo mudou no dia em que descobrimos " + food)
+        }else {
+            document.write("Aqui está uma história para você!<br>");  
+            document.write("O desastrado " + animal + " caminhou orgulhosamente pelo(a) " + place + ", derrubando " + food + " por todo lugar.<br>");
+            document.write("Durante muitos anos, o(a) " + place + " era dominado(a) unicamente por um " + animal + " terrível. Tudo mudou no dia em que descobrimos " + food)
+        }
     </script>
 </body>
 </html>
